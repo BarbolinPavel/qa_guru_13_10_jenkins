@@ -34,7 +34,7 @@ public class DemoqaTests extends TestBase {
                     .setDateOfBirth("01", "June", "2000")
                     .setSubjects(subjects)
                     .setHobbies(hobbies)
-                    .setUploadPicture("imeg.jpg")
+                    .setUploadPicture("image.jpg")
                     .setCurrentAddress(address)
                     .setState(state)
                     .setCity(city)
@@ -50,7 +50,7 @@ public class DemoqaTests extends TestBase {
                     .checkResult("Date of Birth", "01 June,2000")
                     .checkResult("Subjects", subjects)
                     .checkResult("Hobbies", hobbies)
-                    .checkResult("Picture", "imeg.jpg")
+                    .checkResult("Picture", "image.jpg")
                     .checkResult("Address", address)
                     .checkResult("State and City", state + " " + city);
         });
